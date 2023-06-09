@@ -20,7 +20,7 @@ function getBaseSidebar() {
       ],
     },
     {
-      text: "开始",
+      text: "基础",
       items: [
         {
           text: "基础类型",
@@ -43,8 +43,24 @@ function getBaseSidebar() {
           link: "/base/type/function",
         },
         {
+          text: "元祖类型",
+          link: "/base/type/tuple",
+        },
+        {
+          text: "枚举类型",
+          link: "/base/type/enum",
+        },
+        {
           text: "联交类型与类型断言",
           link: "/base/type/multiple",
+        },
+        {
+          text: "内置对象",
+          link: "/base/type/implicit",
+        },
+        {
+          text: "类",
+          link: "/base/type/class",
         },
       ],
     },
