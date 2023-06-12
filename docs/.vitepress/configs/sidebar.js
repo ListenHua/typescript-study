@@ -1,6 +1,6 @@
 export default {
   "/base/": getBaseSidebar(),
-  "/components/": getSeniorSidebar(),
+  "/senior/": getSeniorSidebar(),
 };
 
 function getBaseSidebar() {
@@ -24,43 +24,43 @@ function getBaseSidebar() {
       items: [
         {
           text: "基础类型",
-          link: "/base/type/base",
+          link: "/base/base",
         },
         {
           text: "任意类型",
-          link: "/base/type/any",
+          link: "/base/any",
         },
         {
           text: "接口",
-          link: "/base/type/interface",
+          link: "/base/interface",
         },
         {
           text: "数组类型",
-          link: "/base/type/array",
+          link: "/base/array",
         },
         {
           text: "函数类型",
-          link: "/base/type/function",
+          link: "/base/function",
         },
         {
           text: "元祖类型",
-          link: "/base/type/tuple",
+          link: "/base/tuple",
         },
         {
           text: "枚举类型",
-          link: "/base/type/enum",
+          link: "/base/enum",
         },
         {
-          text: "联交类型与类型断言",
-          link: "/base/type/multiple",
+          text: "联合、交叉类型与类型断言",
+          link: "/base/multiple",
         },
         {
           text: "内置对象",
-          link: "/base/type/implicit",
+          link: "/base/implicit",
         },
         {
           text: "类",
-          link: "/base/type/class",
+          link: "/base/class",
         },
       ],
     },
@@ -70,31 +70,16 @@ function getBaseSidebar() {
 function getSeniorSidebar() {
   return [
     {
-      text: "组件",
+      text: "进阶",
+      collapsible: false,
       items: [
         {
-          text: "Button 按钮",
-          link: "/components/button",
+          text: "概述",
+          link: "/senior/",
         },
         {
-          text: "Tabs 标签页",
-          link: "/components/tabs",
-        },
-        {
-          text: "Modal 对话框",
-          link: "/components/modal",
-        },
-        {
-          text: "Tag 标签",
-          link: "/components/tag",
-        },
-        {
-          text: "Vue 引用组件",
-          link: "/components/vue",
-        },
-        {
-          text: "Vue Script",
-          link: "/components/vue-script",
+          text: "类型别名",
+          link: "/senior/type-alias",
         },
       ],
     },

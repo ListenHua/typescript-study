@@ -127,6 +127,10 @@ const person: Person = {
 };
 ```
 
+---
+
+了解与它相似的[类型别名](../senior/type-alias.md)
+
 <!-- ## 示例
 
 类似说我们知道一个列表数据接口会返回 code、list、msg、total、page，那么我们就可以定义一个列表接口返回
