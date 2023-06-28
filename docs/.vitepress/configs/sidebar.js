@@ -1,6 +1,7 @@
 export default {
   "/base/": getBaseSidebar(),
   "/senior/": getSeniorSidebar(),
+  "/practice/": getPracticeSidebar(),
 };
 
 function getBaseSidebar() {
@@ -25,10 +26,6 @@ function getBaseSidebar() {
         {
           text: "基础类型",
           link: "/base/base",
-        },
-        {
-          text: "任意类型",
-          link: "/base/any",
         },
         {
           text: "接口",
@@ -62,6 +59,10 @@ function getBaseSidebar() {
           text: "类",
           link: "/base/class",
         },
+        {
+          text: "泛型",
+          link: "/base/generics",
+        },
       ],
     },
   ];
@@ -80,6 +81,25 @@ function getSeniorSidebar() {
         {
           text: "类型别名",
           link: "/senior/type-alias",
+        },
+      ],
+    },
+  ];
+}
+
+function getPracticeSidebar() {
+  return [
+    {
+      text: "实战",
+      collapsible: false,
+      items: [
+        {
+          text: "概述",
+          link: "/practice/",
+        },
+        {
+          text: "Class 类",
+          link: "/practice/class",
         },
       ],
     },

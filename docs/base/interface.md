@@ -131,20 +131,33 @@ const person: Person = {
 
 了解与它相似的[类型别名](../senior/type-alias.md)
 
-<!-- ## 示例
+## 相关疑问
 
-类似说我们知道一个列表数据接口会返回 code、list、msg、total、page，那么我们就可以定义一个列表接口返回
+1. 同名属性处理
+
+假设继承中定义了同名属性，那么以最后出现的为主
 
 ```ts
-interface listResult {
-  code: number;
-  list: array;
-  msg: string;
-  total: number;
-  page: number;
+interface A {
+  x: number;
 }
-```
 
-```ts
-const main: listResult = await formDesign.searchFormData("进度总汇交表");
-``` -->
+interface B {
+  x: string;
+  y: number;
+}
+
+interface C extends A, B {
+  z: boolean;
+}
+
+const obj: C = {
+  x: "Hello",
+  y: 42,
+  z: true,
+};
+
+console.log(obj.x); // 输出: Hello
+console.log(obj.y); // 输出: 42
+console.log(obj.z); // 输出: true
+```

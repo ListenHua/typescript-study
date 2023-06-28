@@ -57,9 +57,11 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/ListenHua/typescript-study" },
     ],
 
+    // 底部代码
     // footer: {
     //   message: "Released under the MIT License.",
     //   copyright: "Copyright © ListenHua",
+    //   link: "www.baidu.com",
     // },
   },
 });

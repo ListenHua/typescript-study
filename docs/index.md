@@ -30,3 +30,9 @@ features:
     title: 渐进式采用
     details: TypeScript 可以与现有的 JavaScript 代码无缝集成，支持渐进式采用。
 ---
+
+<script setup>
+import Footer from './components/footer.vue'
+</script>
+
+<Footer/>
