@@ -79,8 +79,16 @@ function getSeniorSidebar() {
           link: "/senior/",
         },
         {
+          text: "配置",
+          link: "/senior/config",
+        },
+        {
           text: "类型别名",
           link: "/senior/type-alias",
+        },
+        {
+          text: "装饰器",
+          link: "/senior/decorators",
         },
       ],
     },

@@ -19,13 +19,6 @@ export default defineConfig({
       level: [0, 0],
     },
 
-    // options for markdown-it-anchor
-    anchor: { permalink: false },
-
-    // options for markdown-it-toc
-    toc: { includeLevel: [1, 2] },
-
-    // light: #f9fafb, dark: --vp-code-block-bg
     theme: { light: "github-light", dark: "github-dark" },
 
     config: (md) => {
@@ -56,12 +49,5 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/ListenHua/typescript-study" },
     ],
-
-    // 底部代码
-    // footer: {
-    //   message: "Released under the MIT License.",
-    //   copyright: "Copyright © ListenHua",
-    //   link: "www.baidu.com",
-    // },
   },
 });
